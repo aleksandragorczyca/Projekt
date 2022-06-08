@@ -1,10 +1,16 @@
+<style>
+    h1{text-align: center;color:#cb1a6c;background-color:#100b0b}
+</style>
 <h1>Welcome to my website</h1>
 {% if index_list %}
     <ul>
     {% for index in index_list%}
-        <li><a href="/movies/{{index.id}}">{{index}}</a></li>
+        <h2><a href="/movies/{{index.id}}">{{index}}</a></h2>
     {% endfor%}
     </ul>
 {% else %}
-    <p> No content aviable.</p>
+    <p> No index aviable.</p>
 {% endif %}
+<center>
+    <img src="https://icon-library.com/images/movie-camera-icon/movie-camera-icon-0.jpg" width="300" height="300">    
+</center>

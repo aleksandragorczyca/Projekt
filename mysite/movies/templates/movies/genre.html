@@ -1,8 +1,11 @@
+<style>
+h1{text-align:center;color:#ae1717;background-color:#782c84}
+</style>
 <h1>Genres</h1>
 {% if genre_list %}
     <ul>
     {% for genre in genre_list %}
-    <li><a href="/movies/genre/{{genre.id}}">{{genre.genre_name}}</a></li>
+    <h2><a href="/movies/genre/{{genre.id}}">{{genre.genre_name}}</a></h2>
     {% endfor %}
     </ul>
 {% else %}

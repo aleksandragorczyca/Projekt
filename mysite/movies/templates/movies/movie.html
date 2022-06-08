@@ -1,10 +1,16 @@
+<style>
+ h1{text-align:center;color:#6914ad;background-color:#0a0a0a}
+</style>
 <h1>Movies:</h1>
 {% if movie_list %}
     <ul>
     {% for movie in movie_list %}
-    <li><a href="/movies/movie/{{movie.id}}"></a>>#{{movie.movie_name}}</a></li>
+    <h2><a href="/movies/movie/{{movie.id}}"></a>>#{{movie.movie_name}}</a></h2>
     {% endfor %}
     </ul>
 {% else %}
     <p>No movies are available.</p>
 {% endif %}
+<center>
+<img src="https://play-lh.googleusercontent.com/Vee8sq_MaVZO9kvdqeo_c89r_l94Eth8WHdQS8SorRSigfeJ2CaA5h0iNXEt1I8GssQ=w240-h480-rw" width="300" height="300">   
+</center>

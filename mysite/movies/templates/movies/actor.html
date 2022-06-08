@@ -1,10 +1,17 @@
+<style>
+    h1{text-align:center;color:#ada314;background-color:#0a0a0a}
+ </style>
 <h1>Actors:</h1>
 {% if actor_list %}
     <ul>
     {% for actor in actor_list %}
-    <li><a href="/movies/actor/{{actor.id}}">{{actor.actor_name}}</a></li>
+    <h2><a href="/movies/actor/{{actor.id}}">{{actor.actor_name}}</a></h2>
     {% endfor%}
     </ul>
 {% else %}
     <p> No actor available.</p>
 {% endif %}
+<center>
+    <img src="https://dziendobry.tvn.pl/gwiazdy/cdn-zdjecie-ru4zii-angelina-jolie-wspomina-pobyt-w-ukrainie-5458327/angelina+jolie.jpg" width="300" height="300">  
+    <img src="https://www.glamour.pl/media/cache/default_medium/uploads/media/default/0005/10/brad-pitt.jpeg" width="300" height="300"> 
+</center>
