@@ -1,9 +1,10 @@
+from django.http import HttpResponse
 from re import template
-from gc import get_objects
-from django.template import loader
 from multiprocessing import context
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.template import loader
+
+
 
 from .models import Genre, Movie, Actor
 

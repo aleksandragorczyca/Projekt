@@ -1,5 +1,5 @@
 from django.db import models
-from operator import mod
+
 
 
 class Genre(models.Model):
