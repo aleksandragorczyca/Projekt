@@ -1,0 +1,9 @@
+{% if actor_list %}
+    <ul>
+    {% for actor in actor_list %}
+    <li><a href="/movies/actor/{{actor.id}}">{{actor.actor_name}}</a></li>
+    {% endfor%}
+    </ul>
+{% else %}
+    <p> No actor available.</p>
+{% endif %}

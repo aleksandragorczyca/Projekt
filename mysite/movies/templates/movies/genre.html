@@ -1,0 +1,12 @@
+<h1>Welcome to my website</h1>
+<h2>Genre</h2>
+{% if genre_list %}
+    <ul>
+    {% for genre in genre_list %}
+    <li><a href="/movies/genre/{{genre.id}}">{{genre.genre_name}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No genre are available.</p>
+{% endif %}
+
