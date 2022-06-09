@@ -26,10 +26,3 @@ class Movie(models.Model):
         return self.movie_name
 
 
-class Reaction(models.Model):
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    reaction = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
-
-    def __str__(self):
-        return self.reaction

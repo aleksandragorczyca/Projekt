@@ -1,7 +1,9 @@
+
 from django.shortcuts import render
 
 
 from .models import Genre, Movie, Actor
+from .forms import Form
 
 
 def index(request):   
@@ -25,3 +27,11 @@ def actor(request):
     actor_list = Actor.objects.all
     context = {'actor_list':actor_list}
     return render(request, 'movies/actor.html',context)
+
+def form(request):
+    form_list= Form()
+    context = {'form':form_list}
+    return render(request,'movies/form.html', context)
+
+
+
